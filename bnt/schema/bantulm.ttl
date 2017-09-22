@@ -1,0 +1,283 @@
+@prefix : <http://www.mmoon.org/bnt/schema/bantulm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mmoon: <http://www.mmoon.org/core/> .
+@prefix provo: <http://www.w3.org/ns/prov#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix vartrans: <https://www.w3.org/ns/lemon/vartrans#> .
+@base <http://www.mmoon.org/bnt/schema/bantulm/> .
+
+<http://www.mmoon.org/bnt/schema/bantulm/> rdf:type owl:Ontology ;
+                                            owl:versionIRI <http://www.mmoon.org/bnt/schema/bantulm/v1.0.0/> ;
+                                            dc:creator <http://aksw.org/BettinaKlimek.rdf> ;
+                                            dc:description "The Bantu Language Model is..."@en ;
+                                            dc:title "The Bantu Language Model"@en ;
+                                            dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                            rdfs:label "Bantu Language Model"@en ;
+                                            owl:versionInfo "Version 1.0, 2017. Created and maintained by Bettina Klimek."@en .
+
+:attachedTo rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty mmoon:attachedTo ;
+             rdfs:label "attached to"@en .
+
+:attachedToRoot rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty mmoon:attachedToRoot ;
+                rdfs:subPropertyOf :attachedTo ;
+                rdfs:label "attached to root"@en .
+
+:attachedToStem rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty mmoon:attachedToStem ;
+                rdfs:subPropertyOf :attachedTo ;
+                rdfs:label "attached to stem"@en .
+
+:belongsToLexicalEntry rdf:type owl:ObjectProperty ;
+                       owl:equivalentProperty mmoon:belongsToLexicalEntry ;
+                       owl:inverseOf :hasWordform ;
+                       rdfs:label "belongs to lexical entry"@en .
+
+:consistOfStem rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty mmoon:consistOfStem ;
+               rdfs:label "consists of stem"@en .
+
+:consistsOfAffix rdf:type owl:ObjectProperty ;
+                 owl:equivalentProperty mmoon:consistsOfAffix ;
+                 rdfs:label "consists of affix"@en .
+
+:consistsOfRoot rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty mmoon:consistsOfRoot ;
+                rdfs:label "consists of root"@en .
+
+:entry rdf:type owl:ObjectProperty ;
+       owl:equivalentProperty lime:entry ;
+       rdfs:label "entry"@en .
+
+:forLanguage rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty mmoon:forLanguage ;
+             rdfs:label "for language"@en .
+
+:grammaticalMeaning rdf:type owl:ObjectProperty ;
+                    owl:equivalentProperty mmoon:grammaticalMeaning ;
+                    rdfs:label "grammatical meaning"@en .
+
+:hasMorphemicEntry rdf:type owl:ObjectProperty ;
+                   owl:equivalentProperty mmoon:hasMorphemicEntry ;
+                   rdfs:label "has morphemic entry"@en .
+
+:hasRepresentation rdf:type owl:ObjectProperty ;
+                   owl:equivalentProperty mmoon:hasRepresentation ;
+                   rdfs:label "has representation"@en .
+
+:hasWordclassAffiliation rdf:type owl:ObjectProperty ;
+                         owl:equivalentProperty mmoon:hasWordclassAffiliation ;
+                         rdfs:label "has wordclass affiliation"@en .
+
+:hasWordform rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty mmoon:hasWordform ;
+             rdfs:label "has wordform"@en .
+
+:inherentInflectionalMeaning rdf:type owl:ObjectProperty ;
+                             owl:equivalentProperty mmoon:inherentInflectionalMeaning ;
+                             rdfs:label "inherent inflectional meaning"@en .
+
+:isAllomorphTo rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty mmoon:isAllomorphTo ;
+               rdfs:label "is allomorph to"@en .
+
+:isHomonymTo rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty mmoon:isHomonymTo ;
+             rdfs:label "is homonym to"@en .
+
+:translatableAs rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty vartrans:translatableAs ;
+                rdfs:label "translatable as"@en .
+
+mmoon:isAllomorphTo rdfs:subPropertyOf owl:topObjectProperty .
+
+:language rdf:type owl:DatatypeProperty ;
+          owl:equivalentProperty lime:language ;
+          rdfs:label "language"@en .
+
+:orthographicRepresentation rdf:type owl:DatatypeProperty ;
+                            owl:equivalentProperty mmoon:orthographicRepresentation ;
+                            rdfs:label "orthographic representation"@en .
+
+:Affix rdf:type owl:Class ;
+       rdfs:subClassOf :Morph ,
+                       mmoon:Affix ;
+       rdfs:label "Affix"@en .
+
+:Lexeme rdf:type owl:Class ;
+        rdfs:subClassOf :LexicalEntry ,
+                        mmoon:Lexeme ;
+        rdfs:label "Lexeme"@en .
+
+:LexicalEntry rdf:type owl:Class ;
+              owl:equivalentClass ontolex:LexicalEntry ;
+              rdfs:subClassOf mmoon:LexicalEntry ;
+              rdfs:label "Lexical Entry"@en .
+
+:Lexicon rdf:type owl:Class ;
+         owl:equivalentClass lime:Lexicon ;
+         rdfs:label "Lexicon"@en .
+
+:Morph rdf:type owl:Class ;
+       rdfs:subClassOf mmoon:Morph ;
+       rdfs:label "Morph"@en .
+
+:MorphemeInventory rdf:type owl:Class ;
+                   rdfs:subClassOf mmoon:MorphemeInventory ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :forLanguage ;
+                                     owl:hasValue <http://id.loc.gov/vocabulary/iso639-2/bnt>
+                                   ] ;
+                   rdfs:label "Morpheme Inventory"@en .
+
+:NominalClassifier rdf:type owl:Class ;
+                   rdfs:subClassOf mmoon:Classifier ;
+                   rdfs:label "Nominal Classifier"@en .
+
+:Prefix rdf:type owl:Class ;
+        rdfs:subClassOf :Affix ,
+                        mmoon:Prefix ;
+        rdfs:label "Prefix"@en .
+
+:Representation rdf:type owl:Class ;
+                owl:equivalentClass mmoon:Representation ;
+                rdfs:label "Representation"@en .
+
+:Root rdf:type owl:Class ;
+      rdfs:subClassOf :Morph ,
+                      mmoon:Root ;
+      rdfs:label "Root"@en .
+
+:Stem rdf:type owl:Class ;
+      rdfs:subClassOf :Morph ,
+                      mmoon:Stem ;
+      rdfs:label "Stem"@en .
+
+:Suffix rdf:type owl:Class ;
+        rdfs:subClassOf :Affix ,
+                        mmoon:Suffix ;
+        rdfs:label "Suffix"@en .
+
+:Wordform rdf:type owl:Class ;
+          rdfs:subClassOf :LexicalEntry ,
+                          mmoon:Wordform ;
+          rdfs:label "Wordform"@en .
+
+:infinitive rdf:type owl:NamedIndividual ,
+                     mmoon:Infinitve ;
+            rdfs:label "infinitive"@en .
+
+:nc1 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 1"@en .
+
+:nc10 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 10"@en .
+
+:nc11 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 11"@en .
+
+:nc12 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 12"@en .
+
+:nc13 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 13"@en .
+
+:nc14 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 14"@en .
+
+:nc15 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 15"@en .
+
+:nc16 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 16"@en .
+
+:nc17 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 17"@en .
+
+:nc18 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 18"@en .
+
+:nc19 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 19"@en .
+
+:nc2 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 2"@en .
+
+:nc20 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 20"@en .
+
+:nc21 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 21"@en .
+
+:nc22 rdf:type owl:NamedIndividual ,
+               :NominalClassifier ;
+      rdfs:label "noun class 22"@en .
+
+:nc3 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 3"@en .
+
+:nc4 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 4"@en .
+
+:nc5 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 5"@en .
+
+:nc6 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 6"@en .
+
+:nc7 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 7"@en .
+
+:nc8 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 8"@en .
+
+:nc9 rdf:type owl:NamedIndividual ,
+              :NominalClassifier ;
+     rdfs:label "noun class 9"@en .
+
+:noun rdf:type owl:NamedIndividual ,
+               mmoon:Noun ;
+      rdfs:label "noun"@en .
+
+:plural rdf:type owl:NamedIndividual ,
+                 mmoon:Plural ;
+        rdfs:label "plural"@en .
+
+:singular rdf:type owl:NamedIndividual ,
+                   mmoon:Singular ;
+          rdfs:label "singular"@en .
+
+:verb rdf:type owl:NamedIndividual ,
+               mmoon:Verb ;
+      rdfs:label "verb"@en .
+
+###  Generated by the OWL API (version 5.1.0.2017-03-29T23:31:42Z) https://github.com/owlcs/owlapi/
+###  Warning: type declarations were not added automatically.
