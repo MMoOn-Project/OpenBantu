@@ -1,4 +1,4 @@
-@prefix : <http://www.mmoon.org/bnt/schema/bantulm/> .
+@prefix : <http://mmoon.org/bnt/schema/bantulm/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,14 +7,15 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix mmoon: <http://www.mmoon.org/core/> .
+@prefix mmoon: <http://mmoon.org/core/> .
 @prefix provo: <http://www.w3.org/ns/prov#> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix vartrans: <https://www.w3.org/ns/lemon/vartrans#> .
-@base <http://www.mmoon.org/bnt/schema/bantulm/> .
+@base <http://mmoon.org/bnt/schema/bantulm/> .
 
-<http://www.mmoon.org/bnt/schema/bantulm/> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://www.mmoon.org/bnt/schema/bantulm/v1.0.0/> ;
+<http://mmoon.org/bnt/schema/bantulm/> rdf:type owl:Ontology ;
+
+                                            owl:versionIRI <http://mmoon.org/bnt/schema/bantulm/v1.0.0/> ;
                                             dc:creator <http://aksw.org/BettinaKlimek.rdf> ;
                                             dc:description "The Bantu Language Model is..."@en ;
                                             dc:title "The Bantu Language Model"@en ;
