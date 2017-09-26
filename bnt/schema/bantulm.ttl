@@ -14,14 +14,13 @@
 @base <http://mmoon.org/bnt/schema/bantulm/> .
 
 <http://mmoon.org/bnt/schema/bantulm/> rdf:type owl:Ontology ;
-
-                                            owl:versionIRI <http://mmoon.org/bnt/schema/bantulm/v1.0.0/> ;
-                                            dc:creator <http://aksw.org/BettinaKlimek.rdf> ;
-                                            dc:description "The Bantu Language Model is..."@en ;
-                                            dc:title "The Bantu Language Model"@en ;
-                                            dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                            rdfs:label "Bantu Language Model"@en ;
-                                            owl:versionInfo "Version 1.0, 2017. Created and maintained by Bettina Klimek."@en .
+                                        owl:versionIRI <http://mmoon.org/bnt/schema/bantulm/v1.0.0/> ;
+                                        dc:creator <http://aksw.org/BettinaKlimek.rdf> ;
+                                        dc:description "The Bantu Language Model is..."@en ;
+                                        dc:title "The Bantu Language Model"@en ;
+                                        dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                        rdfs:label "Bantu Language Model"@en ;
+                                        owl:versionInfo "Version 1.0, 2017. Created and maintained by Bettina Klimek."@en .
 
 :attachedTo rdf:type owl:ObjectProperty ;
              owl:equivalentProperty mmoon:attachedTo ;
@@ -42,10 +41,6 @@
                        owl:inverseOf :hasWordform ;
                        rdfs:label "belongs to lexical entry"@en .
 
-:consistsOfStem rdf:type owl:ObjectProperty ;
-               owl:equivalentProperty mmoon:consistsOfStem ;
-               rdfs:label "consists of stem"@en .
-
 :consistsOfAffix rdf:type owl:ObjectProperty ;
                  owl:equivalentProperty mmoon:consistsOfAffix ;
                  rdfs:label "consists of affix"@en .
@@ -53,6 +48,10 @@
 :consistsOfRoot rdf:type owl:ObjectProperty ;
                 owl:equivalentProperty mmoon:consistsOfRoot ;
                 rdfs:label "consists of root"@en .
+
+:consistsOfStem rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty mmoon:consistsOfStem ;
+                rdfs:label "consists of stem"@en .
 
 :entry rdf:type owl:ObjectProperty ;
        owl:equivalentProperty lime:entry ;
