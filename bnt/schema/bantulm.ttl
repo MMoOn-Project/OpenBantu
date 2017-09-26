@@ -42,8 +42,8 @@
                        owl:inverseOf :hasWordform ;
                        rdfs:label "belongs to lexical entry"@en .
 
-:consistOfStem rdf:type owl:ObjectProperty ;
-               owl:equivalentProperty mmoon:consistOfStem ;
+:consistsOfStem rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty mmoon:consistsOfStem ;
                rdfs:label "consists of stem"@en .
 
 :consistsOfAffix rdf:type owl:ObjectProperty ;
