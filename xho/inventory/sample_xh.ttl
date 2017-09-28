@@ -1,0 +1,856 @@
+@prefix blm:     <http://mmoon.org/bnt/schema/bantulm/> .
+@prefix lexvo_iso6393:  <http://www.lexvo.org/page/iso639-3/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix loc_iso6392:  <http://id.loc.gov/vocabulary/iso639-2/> .
+@prefix xho_inventory:  <http://www.example.org/xho/inventory/bantulm/> .
+
+xho_inventory:trans_cut_into_for
+      a       blm:LexicalEntry ;
+      rdf:label "cut into for"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_is
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "is"@xh .
+
+xho_inventory:lexeme_isakhi_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_is_7_sg ;
+      blm:consistsOfRoot xho_inventory:root_akhi ;
+      blm:hasRepresentation
+              xho_inventory:rep_isakhi ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_formative .
+
+xho_inventory:trans_become_thin
+      a       blm:LexicalEntry ;
+      rdf:label "become thin"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_khumbula_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_khumbula ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_recognise , xho_inventory:trans_remember .
+
+xho_inventory:prefix_is_7_sg
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_adlunge , xho_inventory:root_afobe , xho_inventory:root_akhi , xho_inventory:root_aci , xho_inventory:root_akhiwo ;
+      blm:hasRepresentation
+              xho_inventory:rep_is ;
+      blm:inherentInflectionalMeaning
+              blm:singular , blm:nc7 ;
+      blm:isAllomorphTo xho_inventory:prefix_isa_7_sg .
+
+xho_inventory:root_akhi
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_akhi .
+
+xho_inventory:trans_lose_weight
+      a       blm:LexicalEntry ;
+      rdf:label "lose weight"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_abelo
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "abelo"@xh .
+
+xho_inventory:root_akhiwo
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_akhiwo .
+
+xho_inventory:lexeme_isakhiwo_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_is_7_sg ;
+      blm:consistsOfRoot xho_inventory:root_akhiwo ;
+      blm:hasRepresentation
+              xho_inventory:rep_isakhiwo ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_structure .
+
+xho_inventory:root_adlunge
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_adlunge .
+
+xho_inventory:trans_recognise
+      a       blm:LexicalEntry ;
+      rdf:label "recognise"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_izakhi_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iz_8_pl ;
+      blm:consistsOfRoot xho_inventory:root_akhi ;
+      blm:hasRepresentation
+              xho_inventory:rep_izakhi ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_formative .
+
+xho_inventory:trans_expand
+      a       blm:LexicalEntry ;
+      rdf:label "expand"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_mimitheka
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "mimitheka"@xh .
+
+xho_inventory:rep_aci
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "aci"@xh .
+
+xho_inventory:lexeme_isafobe_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_is_7_sg ;
+      blm:consistsOfRoot xho_inventory:root_afobe ;
+      blm:hasRepresentation
+              xho_inventory:rep_isafobe ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_idioms .
+
+xho_inventory:lexeme_joboda_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_joboda ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_struggle_violently_to_escape .
+
+xho_inventory:rep_iim
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "iim"@xh .
+
+xho_inventory:trans_confer_a_favour
+      a       blm:LexicalEntry ;
+      rdf:label "confer a favour"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_badada
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "badada"@xh .
+
+xho_inventory:prefix_im_3_sg
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_gwenyezinja ;
+      blm:hasRepresentation
+              xho_inventory:rep_im ;
+      blm:inherentInflectionalMeaning
+              blm:nc3 , blm:singular ;
+      blm:isHomonymTo xho_inventory:prefix_im_9_sg .
+
+xho_inventory:rep_nqina
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "nqina"@xh .
+
+xho_inventory:lexeme_izaci_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iz_8_pl ;
+      blm:consistsOfRoot xho_inventory:root_aci ;
+      blm:hasRepresentation
+              xho_inventory:rep_izaci ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_motto .
+
+xho_inventory:trans_revise
+      a       blm:LexicalEntry ;
+      rdf:label "revise"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_imigwenyezinja
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "imigwenyezinja"@xh .
+
+xho_inventory:morpheme_inventory
+      a       blm:MorphemeInventory ;
+      blm:forLanguage loc_iso6392:xho ;
+      blm:hasMorphemicEntry
+              xho_inventory:root_gwenyezinja , xho_inventory:root_afobe , xho_inventory:prefix_isa_7_sg , xho_inventory:prefix_im_9_sg , xho_inventory:prefix_imi_4_pl , xho_inventory:prefix_is_7_sg , xho_inventory:root_akhi , xho_inventory:prefix_aba_2_pl , xho_inventory:root_abelo , xho_inventory:root_badada , xho_inventory:root_akhiwo , xho_inventory:prefix_iim_10_pl , xho_inventory:root_adlunge , xho_inventory:prefix_um_1_sg , xho_inventory:prefix_iza_8_pl , xho_inventory:root_abi , xho_inventory:root_aci , xho_inventory:prefix_iz_8_pl , xho_inventory:prefix_im_3_sg .
+
+xho_inventory:rep_joboda
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "joboda"@xh .
+
+xho_inventory:rep_isaci
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "isaci"@xh .
+
+xho_inventory:rep_adlunge
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "adlunge"@xh .
+
+xho_inventory:trans_arbiter
+      a       blm:LexicalEntry ;
+      rdf:label "arbiter"@en ;
+      blm:language "en" .
+
+xho_inventory:prefix_um_1_sg
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_abi ;
+      blm:hasRepresentation
+              xho_inventory:rep_um ;
+      blm:inherentInflectionalMeaning
+              blm:singular , blm:nc1 .
+
+xho_inventory:rep_izaci
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "izaci"@xh .
+
+xho_inventory:rep_gwenyezinja
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "gwenyezinja"@xh .
+
+xho_inventory:lexeme_nqina_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_nqina ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_become_lean , xho_inventory:trans_become_thin , xho_inventory:trans_lose_weight .
+
+xho_inventory:trans_lot
+      a       blm:LexicalEntry ;
+      rdf:label "lot"@en ;
+      blm:language "en" .
+
+xho_inventory:root_abi
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_abi .
+
+xho_inventory:prefix_iza_8_pl
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_abelo ;
+      blm:hasRepresentation
+              xho_inventory:rep_iza ;
+      blm:inherentInflectionalMeaning
+              blm:nc8 , blm:plural ;
+      blm:isAllomorphTo xho_inventory:prefix_iz_8_pl .
+
+xho_inventory:rep_isafobe
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "isafobe"@xh .
+
+xho_inventory:rep_imbadada
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "imbadada"@xh .
+
+xho_inventory:lexeme_imgwenyezinja_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_im_3_sg ;
+      blm:consistsOfRoot xho_inventory:root_gwenyezinja ;
+      blm:hasRepresentation
+              xho_inventory:rep_imgwenyezinja ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_dog_plam .
+
+xho_inventory:lexeme_isakhi_2_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_is_7_sg ;
+      blm:consistsOfRoot xho_inventory:root_akhi ;
+      blm:hasRepresentation
+              xho_inventory:rep_isakhi ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_morpheme .
+
+xho_inventory:rep_imgwenyezinja
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "imgwenyezinja"@xh .
+
+xho_inventory:trans_restore
+      a       blm:LexicalEntry ;
+      rdf:label "restore"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_umabi_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_um_1_sg ;
+      blm:consistsOfRoot xho_inventory:root_abi ;
+      blm:hasRepresentation
+              xho_inventory:rep_umabi ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_distributor , xho_inventory:trans_divider , xho_inventory:trans_arbiter .
+
+xho_inventory:lexeme_izaabelo_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iza_8_pl ;
+      blm:consistsOfRoot xho_inventory:root_abelo ;
+      blm:hasRepresentation
+              xho_inventory:rep_izaabelo ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_share , xho_inventory:trans_lot .
+
+xho_inventory:rep_nxanelwa
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "nxanelwa"@xh .
+
+xho_inventory:trans_struggle_violently_to_escape
+      a       blm:LexicalEntry ;
+      rdf:label "struggle violently to escape"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_izadlunge
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "izadlunge"@xh .
+
+xho_inventory:trans_renovate
+      a       blm:LexicalEntry ;
+      rdf:label "renovate"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_spin
+      a       blm:LexicalEntry ;
+      rdf:label "spin"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_thirst_for
+      a       blm:LexicalEntry ;
+      rdf:label "thirst for"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_isakhiwo
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "isakhiwo"@xh .
+
+xho_inventory:rep_isakhi
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "isakhi"@xh .
+
+xho_inventory:trans_long_for
+      a       blm:LexicalEntry ;
+      rdf:label "long for"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_izakhiwo_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iz_8_pl ;
+      blm:consistsOfRoot xho_inventory:root_akhiwo ;
+      blm:hasRepresentation
+              xho_inventory:rep_izakhiwo ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_structure .
+
+xho_inventory:trans_distributor
+      a       blm:LexicalEntry ;
+      rdf:label "distributor"@en ;
+      blm:language "en" .
+
+xho_inventory:prefix_imi_4_pl
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_gwenyezinja ;
+      blm:hasRepresentation
+              xho_inventory:rep_imi ;
+      blm:inherentInflectionalMeaning
+              blm:nc4 , blm:plural .
+
+xho_inventory:lexeme_iimbadada_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iim_10_pl ;
+      blm:consistsOfRoot xho_inventory:root_badada ;
+      blm:hasRepresentation
+              xho_inventory:rep_iimbadada ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_sandal .
+
+xho_inventory:root_abelo
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_abelo .
+
+xho_inventory:rep_izaabelo
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "izaabelo"@xh .
+
+xho_inventory:trans_structure
+      a       blm:LexicalEntry ;
+      rdf:label "structure"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_formative
+      a       blm:LexicalEntry ;
+      rdf:label "formative"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_remember
+      a       blm:LexicalEntry ;
+      rdf:label "remember"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_um
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "um"@xh .
+
+xho_inventory:lexeme_izafobe_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iz_8_pl ;
+      blm:consistsOfRoot xho_inventory:root_afobe ;
+      blm:hasRepresentation
+              xho_inventory:rep_izafobe ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_idioms .
+
+xho_inventory:rep_im
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "im"@xh .
+
+xho_inventory:lexeme_nxanelwa_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_nxanelwa ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_thirst_for , xho_inventory:trans_desire_earnestly , xho_inventory:trans_long_for .
+
+xho_inventory:lexeme_izadlunge_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iz_8_pl ;
+      blm:consistsOfRoot xho_inventory:root_adlunge ;
+      blm:hasRepresentation
+              xho_inventory:rep_izadlunge ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_wagon_tree .
+
+xho_inventory:rep_imi
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "imi"@xh .
+
+xho_inventory:rep_dakumba
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "dakumba"@xh .
+
+xho_inventory:lexeme_dakumba_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_dakumba ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_get_depressed .
+
+xho_inventory:trans_twist
+      a       blm:LexicalEntry ;
+      rdf:label "twist"@en ;
+      blm:language "en" .
+
+xho_inventory:root_badada
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_badada .
+
+xho_inventory:trans_plait
+      a       blm:LexicalEntry ;
+      rdf:label "plait"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_akhi
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "akhi"@xh .
+
+xho_inventory:rep_umabi
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "umabi"@xh .
+
+xho_inventory:lexeme_abaabi_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_aba_2_pl ;
+      blm:consistsOfRoot xho_inventory:root_abi ;
+      blm:hasRepresentation
+              xho_inventory:rep_abaabi ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_distributor , xho_inventory:trans_divider , xho_inventory:trans_arbiter .
+
+xho_inventory:trans_bless
+      a       blm:LexicalEntry ;
+      rdf:label "bless"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_photha_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_photha ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_spin , xho_inventory:trans_twist , xho_inventory:trans_plait .
+
+xho_inventory:trans_sandal
+      a       blm:LexicalEntry ;
+      rdf:label "sandal"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_izakhi_2_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_iz_8_pl ;
+      blm:consistsOfRoot xho_inventory:root_akhi ;
+      blm:hasRepresentation
+              xho_inventory:rep_izakhi ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_morpheme .
+
+xho_inventory:root_gwenyezinja
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_gwenyezinja .
+
+xho_inventory:root_afobe
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_afobe .
+
+xho_inventory:rep_isadlunge
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "isadlunge"@xh .
+
+xho_inventory:lexeme_qumbiseka_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_qumbiseka ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_become_enraged , xho_inventory:trans_angry .
+
+xho_inventory:rep_abaabi
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "abaabi"@xh .
+
+xho_inventory:rep_izakhi
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "izakhi"@xh .
+
+xho_inventory:rep_hlaziya
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "hlaziya"@xh .
+
+xho_inventory:prefix_aba_2_pl
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_abi ;
+      blm:hasRepresentation
+              xho_inventory:rep_aba ;
+      blm:inherentInflectionalMeaning
+              blm:nc2 , blm:plural .
+
+xho_inventory:lexeme_isaabelo_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_isa_7_sg ;
+      blm:consistsOfRoot xho_inventory:root_abelo ;
+      blm:hasRepresentation
+              xho_inventory:rep_isaabelo ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_share , xho_inventory:trans_lot .
+
+xho_inventory:trans_cut_into_pieces_slices
+      a       blm:LexicalEntry ;
+      rdf:label "cut into pieces/slices"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_sikelela_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_sikelela ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_cut_into_for , xho_inventory:trans_cut_off_for , xho_inventory:trans_bless , xho_inventory:trans_cut_into_pieces_slices , xho_inventory:trans_confer_a_favour .
+
+xho_inventory:rep_izafobe
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "izafobe"@xh .
+
+xho_inventory:trans_idioms
+      a       blm:LexicalEntry ;
+      rdf:label "idioms"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_put_on_weight
+      a       blm:LexicalEntry ;
+      rdf:label "put on weight"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_morpheme
+      a       blm:LexicalEntry ;
+      rdf:label "morpheme"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_hlaziya_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_hlaziya ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_revise , xho_inventory:trans_restore , xho_inventory:trans_revive , xho_inventory:trans_renovate , xho_inventory:trans_renew .
+
+xho_inventory:rep_iza
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "iza"@xh .
+
+xho_inventory:rep_akhiwo
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "akhiwo"@xh .
+
+xho_inventory:rep_qumbiseka
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "qumbiseka"@xh .
+
+xho_inventory:rep_khumbula
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "khumbula"@xh .
+
+xho_inventory:trans_renew
+      a       blm:LexicalEntry ;
+      rdf:label "renew"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_motto
+      a       blm:LexicalEntry ;
+      rdf:label "motto"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_mimitheka_v
+      a       blm:Lexeme ;
+      blm:hasRepresentation
+              xho_inventory:rep_mimitheka ;
+      blm:hasWordclassAffiliation
+              blm:verb ;
+      blm:translatableAs xho_inventory:trans_put_on_weight , xho_inventory:trans_expand .
+
+xho_inventory:prefix_isa_7_sg
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_abelo ;
+      blm:hasRepresentation
+              xho_inventory:rep_isa ;
+      blm:inherentInflectionalMeaning
+              blm:singular , blm:nc7 .
+
+xho_inventory:prefix_im_9_sg
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_badada ;
+      blm:hasRepresentation
+              xho_inventory:rep_im ;
+      blm:inherentInflectionalMeaning
+              blm:singular , blm:nc9 .
+
+xho_inventory:trans_become_enraged
+      a       blm:LexicalEntry ;
+      rdf:label "become enraged"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_wagon_tree
+      a       blm:LexicalEntry ;
+      rdf:label "wagon tree"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_iimbadada
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "iimbadada"@xh .
+
+xho_inventory:rep_isaabelo
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "isaabelo"@xh .
+
+xho_inventory:lexeme_imigwenyezinja_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_imi_4_pl ;
+      blm:consistsOfRoot xho_inventory:root_gwenyezinja ;
+      blm:hasRepresentation
+              xho_inventory:rep_imigwenyezinja ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_dog_plam .
+
+xho_inventory:prefix_iim_10_pl
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_badada ;
+      blm:hasRepresentation
+              xho_inventory:rep_iim ;
+      blm:inherentInflectionalMeaning
+              blm:nc10 , blm:plural .
+
+xho_inventory:rep_afobe
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "afobe"@xh .
+
+xho_inventory:trans_dog_plam
+      a       blm:LexicalEntry ;
+      rdf:label "dog plam"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_aba
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "aba"@xh .
+
+xho_inventory:trans_become_lean
+      a       blm:LexicalEntry ;
+      rdf:label "become lean"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_divider
+      a       blm:LexicalEntry ;
+      rdf:label "divider"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_angry
+      a       blm:LexicalEntry ;
+      rdf:label "angry"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_sikelela
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "sikelela"@xh .
+
+xho_inventory:rep_izakhiwo
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "izakhiwo"@xh .
+
+xho_inventory:rep_abi
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "abi"@xh .
+
+xho_inventory:trans_share
+      a       blm:LexicalEntry ;
+      rdf:label "share"@en ;
+      blm:language "en" .
+
+xho_inventory:trans_revive
+      a       blm:LexicalEntry ;
+      rdf:label "revive"@en ;
+      blm:language "en" .
+
+xho_inventory:lexeme_isaci_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_is_7_sg ;
+      blm:consistsOfRoot xho_inventory:root_aci ;
+      blm:hasRepresentation
+              xho_inventory:rep_isaci ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_motto .
+
+xho_inventory:rep_iz
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "iz"@xh .
+
+xho_inventory:lexeme_imbadada_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_im_9_sg ;
+      blm:consistsOfRoot xho_inventory:root_badada ;
+      blm:hasRepresentation
+              xho_inventory:rep_imbadada ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_sandal .
+
+xho_inventory:trans_get_depressed
+      a       blm:LexicalEntry ;
+      rdf:label "get depressed"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_photha
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "photha"@xh .
+
+xho_inventory:trans_cut_off_for
+      a       blm:LexicalEntry ;
+      rdf:label "cut off for"@en ;
+      blm:language "en" .
+
+xho_inventory:rep_isa
+      a       blm:Representation ;
+      blm:orthographicRepresentation
+              "isa"@xh .
+
+xho_inventory:lexeme_isadlunge_n
+      a       blm:Lexeme ;
+      blm:consistsOfAffix xho_inventory:prefix_is_7_sg ;
+      blm:consistsOfRoot xho_inventory:root_adlunge ;
+      blm:hasRepresentation
+              xho_inventory:rep_isadlunge ;
+      blm:hasWordclassAffiliation
+              blm:noun ;
+      blm:translatableAs xho_inventory:trans_wagon_tree .
+
+xho_inventory:root_aci
+      a       blm:Root ;
+      blm:hasRepresentation
+              xho_inventory:rep_aci .
+
+xho_inventory:prefix_iz_8_pl
+      a       blm:Prefix ;
+      blm:attachedToRoot xho_inventory:root_adlunge , xho_inventory:root_afobe , xho_inventory:root_akhi , xho_inventory:root_aci , xho_inventory:root_akhiwo ;
+      blm:hasRepresentation
+              xho_inventory:rep_iz ;
+      blm:inherentInflectionalMeaning
+              blm:nc8 , blm:plural .
+
+xho_inventory:trans_desire_earnestly
+      a       blm:LexicalEntry ;
+      rdf:label "desire earnestly"@en ;
+      blm:language "en" .
+
+xho_inventory:lexicon
+      a       blm:Lexicon ;
+      blm:entry xho_inventory:lexeme_isakhi_2_n , xho_inventory:lexeme_mimitheka_v , xho_inventory:lexeme_isakhi_n , xho_inventory:lexeme_khumbula_v , xho_inventory:lexeme_umabi_n , xho_inventory:lexeme_dakumba_v , xho_inventory:lexeme_izaabelo_n , xho_inventory:lexeme_imigwenyezinja_n , xho_inventory:lexeme_isakhiwo_n , xho_inventory:lexeme_izakhi_n , xho_inventory:lexeme_abaabi_n , xho_inventory:lexeme_photha_v , xho_inventory:lexeme_isafobe_n , xho_inventory:lexeme_joboda_v , xho_inventory:lexeme_izakhi_2_n , xho_inventory:lexeme_izakhiwo_n , xho_inventory:lexeme_izaci_n , xho_inventory:lexeme_qumbiseka_v , xho_inventory:lexeme_iimbadada_n , xho_inventory:lexeme_isaci_n , xho_inventory:lexeme_isaabelo_n , xho_inventory:lexeme_imbadada_n , xho_inventory:lexeme_sikelela_v , xho_inventory:lexeme_nqina_v , xho_inventory:lexeme_izafobe_n , xho_inventory:lexeme_isadlunge_n , xho_inventory:lexeme_hlaziya_v , xho_inventory:lexeme_nxanelwa_v , xho_inventory:lexeme_izadlunge_n , xho_inventory:lexeme_imgwenyezinja_n ;
+      blm:language "xh" ;
+      dct:language loc_iso6392:xho , lexvo_iso6393:xho .
