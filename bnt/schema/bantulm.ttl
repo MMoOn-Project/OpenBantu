@@ -16,10 +16,10 @@
 <http://mmoon.org/bnt/schema/bantulm/> rdf:type owl:Ontology ;
                                         owl:versionIRI <http://mmoon.org/bnt/schema/bantulm/v1.0.0/> ;
                                         dc:creator <http://aksw.org/BettinaKlimek.rdf> ;
-                                        dc:description "The Bantu Language Model is..."@en ;
+                                        dc:description "The Bantu Language Model is a language specific MMoOn-based schema ontology that serves to represent lexical and morphological language data and their interrelations for Bantu languages. All classes and properties are reused from existing vocabularies, i.e. MMoOn Core, ontolex, lime and vartrans. In order to obtain the semantics of the classes and properties the rdfs:comment description of the respective equivalent class/property or stated superclass need to be read. It is recommended to use the ontology editor Protégé (https://protege.stanford.edu/) for an easier view and navigation through the Bantu Language Model ontology and their underlying vocabularies."@en ;
                                         dc:title "The Bantu Language Model"@en ;
                                         dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                        rdfs:label "The Bantu Language Model is a language specific MMoOn-based schema ontology that serves to represent lexical and morphological language data and their interrelations for Bantu languages. All classes and properties are reused from existing vocabularies, i.e. MMoOn Core, ontolex, lime and vartrans. In order to obtain the semantics of the classes and properties the rdfs:comment description of the respective equivalent class/property or stated superclass need to be read. It is recommended to use the ontology editor Protégé (https://protege.stanford.edu/) for an easier view and navigation through the Bantu Language Model ontology and their underlying vocabularies."@en ;
+                                        rdfs:label "Bantu Language Model"@en ;
                                         owl:versionInfo "Version 1.0, 2017. Created and maintained by Bettina Klimek."@en .
 
 :attachedTo rdf:type owl:ObjectProperty ;
